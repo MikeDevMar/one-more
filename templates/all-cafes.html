@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>All-cafes</title>
+    <link href="{{url_for('static', filename='css/styles.css')}}" rel="stylesheet">
+</head>
+<body>
+<div class="cafes-intro">
+<h1 > Here are all the cafes </h1>
+{% for cafe in all_cafes %}
+    </div>
+
+<div class="cafes-preview" >
+    <a class="cafes-names" href="{{url_for('cafe_details', cafe_id= cafe.id)}}"> <h3 class="cafes-names" > {{ cafe.name }} </h3> </a>
+     <a class="cafes-names" href="{{url_for('cafe_details', cafe_id= cafe.id)}}"><img class='all-pics' src="{{cafe.img_url}}"> </a>
+</div>
+{% endfor %}
+</body>
+</html>

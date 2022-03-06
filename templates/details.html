@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Cafe-details</title>
+    <link href="{{url_for('static', filename='css/styles.css')}}" rel="stylesheet">
+
+</head>
+<body>
+<h1> Cafe Details</h1>
+<h3> Cafe name: {{cafe.name }}</h3>
+<img class="cafe-pic" src="{{cafe.img_url}}" alt="">
+<div class="cafe-details">
+<p> Location : {{cafe.location}}</p>
+<p>  <a href="{{cafe.map_url}}"> Address </a> </p>
+<p> Seats:  {{cafe.seats}}</p>
+<p> Coffee_price:  {{cafe.coffee_price}}</p>
+<p> Has a toilet:  {{cafe.has_toilet}}</p>
+<p> Has a WiFi:  {{cafe.has_wifi}}</p>
+<p> Has  sockets:  {{cafe.has_sockets}}</p>
+<p> Can take calls? :  {{cafe.can_take_calls}}</p>
+</div>
+</body>
+</html>

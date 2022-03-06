@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Cafes project</title>
+    <link href="{{url_for('static', filename='css/styles.css')}}" rel="stylesheet">
+</head>
+<body>
+<div class="intro-text">
+     <h1> Welcome to the Cafe and Wi-Fi Project</h1>
+     <h2>Here you can find all coffee shops in london with Wifi and good coffee</h2>
+     <p>Select:</p>
+</div>
+<div class="buttons">
+    <a class="btn" href="{{url_for('view_all_cafes')}}">  View all Cafes </a>
+
+    <a class="btn" href="{{url_for('add_new_cafe')}}" > Add new Cafe </a>
+
+</div>
+
+</body>
+</html>
